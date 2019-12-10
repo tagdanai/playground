@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/playground",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
