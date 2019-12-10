@@ -4,17 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    // Bootstrap
-    BsDropdownModule.forRoot()
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
