@@ -1,66 +1,11 @@
 <div class="container-fluid">
-  <header class="py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-12 text-center">
-        <a class="text-dark" style="font-size: 2.5rem">Hummoo Playground</a>
-      </div>
-    </div>
-  </header>
+  <app-header></app-header>
+
   <main class="container">
     <div class="row">
-      <div class="col-md-3 d-none d-md-block">
-        <nav #sidebar class="card">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Apps</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Experiments</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="card">
-          <div class="card-body text-center">
-            <a href="#" class="btn btn-primary">Login</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-9">
-        <div class="card">
-          <div class="card-body text-center">
-            <h1 class="card-title">Welcome to Hummoo's Playground!</h1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body text-center">
-            <h1 class="card-title">Welcome to Hummoo's Playground!</h1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body text-center">
-            <h1 class="card-title">Welcome to Hummoo's Playground!</h1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body text-center">
-            <h1 class="card-title">Welcome to Hummoo's Playground!</h1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body text-center">
-            <h1 class="card-title">Welcome to Hummoo's Playground!</h1>
-          </div>
-        </div>
-      </div>
+      <router-outlet></router-outlet>
     </div>
   </main>
-  <footer class="text-center">
-    Footer!
-  </footer>
+
+  <app-footer></app-footer>
 </div>
