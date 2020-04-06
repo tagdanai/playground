@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  private menus = [
+  menus = [
     {name: 'App', path: '/apps'},
     {name: 'Blog', path: '/blogs'},
     {name: 'Experiment', path: '/experiments'},
