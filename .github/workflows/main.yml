@@ -1,3 +1,4 @@
+# Reference: 
 name: CI
 
 on:
@@ -37,4 +38,4 @@ jobs:
         with:
           args: deploy --only hosting
         env:
-          FIREBASE_TOKEN: 1//0gHv0W1BxCkTjCgYIARAAGBASNwF-L9Ir6Csej6mCpUbL8oP5f56xd2344FY1R81IFH52nzUcQVqPnXoPmaaI2OexIftcYOgMbwU
+          FIREBASE_TOKEN: 1//0gHMOWUM79t0PCgYIARAAGBASNwF-L9IrEzhYwcqCF7dDiy8mzl2UlrWaaWdWGyU08lmv-88BdIQ_SDJ2l9_NsoUUKWnseVtBJkQ
