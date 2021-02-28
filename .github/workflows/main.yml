@@ -1,4 +1,5 @@
-name: CI
+# Reference: https://github.com/w9jds/firebase-action
+name: Build and Deploy
 
 on:
   push:
@@ -10,13 +11,13 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repo
         uses: actions/checkout@master
       - name: Install Dependencies
         run: npm install
       - name: Build
         run: npm run build-prod
-      - name: Archive production artifact
+      - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
           name: dist
@@ -26,15 +27,16 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build]
     steps:
-      - name: Checkout repository
+      - name: Checkout Repo
         uses: actions/checkout@master
-      - name: Download artifact
+      - name: Download Artifact
         uses: actions/download-artifact@master
         with:
           name: dist
-      - name: Deploy to firebase
+          path: dist
+      - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
-          FIREBASE_TOKEN: 1//0gHv0W1BxCkTjCgYIARAAGBASNwF-L9Ir6Csej6mCpUbL8oP5f56xd2344FY1R81IFH52nzUcQVqPnXoPmaaI2OexIftcYOgMbwU
+          FIREBASE_TOKEN: 1//0gHMOWUM79t0PCgYIARAAGBASNwF-L9IrEzhYwcqCF7dDiy8mzl2UlrWaaWdWGyU08lmv-88BdIQ_SDJ2l9_NsoUUKWnseVtBJkQ
