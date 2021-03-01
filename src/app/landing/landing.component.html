@@ -1,19 +1,74 @@
-<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+<div class="jumbotron p-4 p-md-5 text-white rounded">
   <div class="col-md-6 px-0">
-    <h1 class="display-6 font-italic">Welcome to Hummoo's Playground!</h1>
+    <h1 class="display-6 font-italic">Welcome to Moo's Playground!</h1>
     <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently
       about what’s most interesting in this post’s contents.</p>
     <p class="lead mb-0"><a routerLink="/" class="text-white font-weight-bold">Explore...</a></p>
   </div>
 </div>
-
 <div class="row mb-2">
-  <div *ngFor="let menu of menus" class="col-xs-6 col-md-3">
-    <div style="height: 250px"
-         class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static text-center">
-        <a routerLink="{{menu.path}}" class="stretched-link"><h3 class="">{{menu.name}}</h3></a>
+  <div class="col-md-6">
+    <a routerLink="/apps">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative menu-box-1">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">App</h3>
+          <br>
+          <p class="card-text mb-auto">Danish biscuit chocolate bar toffee gummi bears. Bear claw icing sweet jelly-o
+            topping pastry oat cake.</p>
+        </div>
       </div>
-    </div>
+    </a>
+  </div>
+  <div class="col-md-6">
+    <a routerLink="/blogs">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative menu-box-2">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Blog</h3>
+          <br>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </a>
   </div>
 </div>
+<div class="row mb-2">
+  <div class="col-md-6">
+    <a routerLink="/experiments">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative menu-box-3">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Experiment</h3>
+          <br>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+            additional content.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-6">
+    <a routerLink="/about">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative menu-box-4">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">About Me</h3>
+          <br>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<!--<div class="row mb-2">-->
+<!--  <div *ngFor="let menu of menus" class="col-xs-6 col-md-3">-->
+<!--    <div style="height: 250px"-->
+<!--         class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">-->
+<!--      <div class="col p-4 d-flex flex-column position-static text-center">-->
+<!--        <a routerLink="{{menu.path}}" class="stretched-link"><h3 class="">{{menu.name}}</h3></a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
